@@ -37,12 +37,6 @@ This repository contains our (Group 5's) work for CIT 5900-002's three-part proj
   - Text processing methods
 - Created this GitHub Pages site to visualize findings and provide an interactive dashboard
 
-## Key Insights
-Our analysis revealed several interesting patterns in FSRDC research:
-- [Insert 2-3 key findings from your analysis]
-- [Include brief mention of trends or notable discoveries]
-- [Highlight any unexpected or particularly valuable insights]
-
 ## Technologies Used
 - **Python**: Core programming language
 - **Pandas/NumPy**: Data processing and numerical analysis
@@ -69,4 +63,4 @@ Our analysis revealed several interesting patterns in FSRDC research:
 1. Clone this repository
 2. Install requirements: `pip install -r requirements.txt`
 3. Run the main analysis: `python main.py`
-4. View the dashboard at [Your GitHub Pages URL]
+4. View the dashboard at (https://github.com/sethbh30/CIT5900-Research-Graph)
