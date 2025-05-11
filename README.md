@@ -49,7 +49,7 @@ This repository contains our (Group 5's) work for CIT 5900-002's three-part proj
 ## Repository Structure
 - `main.py`: Entry point for running analysis code
 - `data/`: Contains processed datasets
-- `src/`: Source code for data processing and analysis
+- `code/`: Source code for data processing and analysis
 - `notebooks/`: Exploratory Jupyter notebooks
 - `docs/`: Documentation and GitHub Pages files
 - `tests/`: Unit tests for code validation
