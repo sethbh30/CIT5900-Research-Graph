@@ -1,5 +1,5 @@
 import unittest
-from code.extract_metadata import is_fsrdc_related, parse_pmc_metadata
+from code.extract_metadata_nih import is_fsrdc_related, parse_pmc_metadata
 
 class TestFSRDCExtractor(unittest.TestCase):
 
