@@ -63,4 +63,4 @@ This repository contains our (Group 5's) work for CIT 5900-002's three-part proj
 1. Clone this repository
 2. Install requirements: `pip install -r requirements.txt`
 3. Run the main analysis: `python main.py`
-4. View the dashboard at (https://github.com/sethbh30/CIT5900-Research-Graph)
+4. View the dashboard at (https://github.com/sethbh30/FSRDC-Publications-Pipeline)
