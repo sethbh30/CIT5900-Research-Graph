@@ -1,0 +1,1 @@
+This repository contains Group 5's implementation of Phase 3 of the NISS capstone foundation project, focusing on building an inventory system for Federal Statistical Research Data Center (FSRDC) research outputs. Combining skills from Projects 1 (Python applications) and 2 (API/web scraping), we've developed a comprehensive data pipeline
