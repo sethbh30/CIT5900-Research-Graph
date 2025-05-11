@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    background: #f4f4f4;
+    color: #333;
+  }
+  #chart-container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
