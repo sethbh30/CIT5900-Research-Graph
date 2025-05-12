@@ -1,0 +1,8 @@
+pandas
+requests
+beautifulsoup4
+lxml
+networkx
+scikit-learn
+matplotlib
+plotly
