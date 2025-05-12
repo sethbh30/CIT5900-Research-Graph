@@ -38,7 +38,7 @@ This repository contains our (Group 5's) work for CIT 5900-002's three-part proj
 - Created this GitHub Pages site to visualize findings and provide an interactive dashboard
 
 ## Project structure
-CIT5900-Research-Graph/
+CIT5900-Publications-Pipeline/
 ├── docs/ # GitHub Pages dashboard (HTML/JS/CSS)
 │ └── data/ # Processed JSON for visualization
 ├── code/ # Python backend
