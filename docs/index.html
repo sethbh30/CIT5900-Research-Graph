@@ -1,16 +1,84 @@
-<div class="dashboard">
-  <h1>FSRDC Research Outputs</h1>
-  
-  <!-- Plot 1 Container -->
-  <div class="plot-container">
-      <div id="projects-per-year"></div>
-  </div>
-  
-  <!-- Plot 2 Container -->
-  <div class="plot-container">
-      <div id="active-projects-trend"></div>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSRDC Research Output Inventory</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="project-header">
+            <h1>FSRDC Research Output Inventory and Analysis</h1>
+        </header>
 
-<!-- Add Plotly JS -->
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <section class="project-overview">
+            <h2>Project Overview</h2>
+            <p>This repository contains our (Group 5's) work for CIT 5900-002's three-part project on Federal Statistical Research Data Centers (FSRDC) research output analysis. The project progressed from basic data modeling to a comprehensive research output analysis platform with visualization dashboard.</p>
+        </section>
+
+        <section class="project-journey">
+            <h2>Project Journey</h2>
+            
+            <div class="phase">
+                <h3>Project 1: Data Modeling and Basic Graph Analysis</h3>
+                <ul>
+                    <li>Developed foundational data structures to represent FSRDC research outputs</li>
+                    <li>Implemented graph data structures where nodes represented research outputs</li>
+                    <li>Created connections between outputs based on shared attributes</li>
+                    <li>Implemented BFS/DFS algorithms for graph traversal</li>
+                </ul>
+            </div>
+            
+            <div class="phase">
+                <h3>Project 2: Web Scraping, API Integration, and Advanced Analysis</h3>
+                <ul>
+                    <li>Expanded dataset through web scraping of public FSRDC projects</li>
+                    <li>Integrated with research APIs (OpenAlex, NIH, BASE, CORE)</li>
+                    <li>Applied entity resolution techniques to remove duplicates</li>
+                    <li>Enhanced graph analysis using NetworkX</li>
+                </ul>
+            </div>
+            
+            <div class="phase">
+                <h3>Project 3: Comprehensive Analysis and Web Dashboard</h3>
+                <ul>
+                    <li>Consolidated and deduplicated data from multiple sources</li>
+                    <li>Performed extensive data enrichment and standardization</li>
+                    <li>Conducted exploratory data analysis on RDC performance</li>
+                    <li>Applied advanced data science techniques (PCA, clustering)</li>
+                    <li>Created this interactive visualization dashboard</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="visualizations">
+            <h2>Research Output Analysis</h2>
+            
+            <div class="plot-container">
+                <h3>Number of Projects per Output Year</h3>
+                <img src="images/plot1.png" alt="Projects by year" class="plot-image">
+                <div class="insights">
+                    <h4>Key Findings:</h4>
+                    <p>📈 <strong>Exponential Growth:</strong> Annual output increased from 4 projects (2014) to 13 (2018)</p>
+                    <p>🏆 <strong>Peak Year:</strong> 2024 saw maximum productivity (23 projects)</p>
+                    <p>🔄 <strong>Growth Rate:</strong> 150% increase over 5 years</p>
+                    <p>📉 <strong>Post-Pandemic:</strong> Strong increase from 8 projects in 2020 to 23 projects in 2024</p>
+                </div>
+            </div>
+
+            <div class="plot-container">
+                <h3>Active Projects per Year (1990-Present)</h3>
+                <img src="images/plot2.png" alt="Active projects trend" class="plot-image">
+                <div class="insights">
+                    <h4>Key Findings:</h4>
+                    <p>🚀 <strong>Steady Expansion:</strong> Active projects grew from 4 (1995) to 60 (2018)</p>
+                    <p>⏱️ <strong>Doubling Period:</strong> Project count doubles every 10 years</p>
+                    <p>📊 <strong>Current Status:</strong> 35 active projects in 2025</p>
+                    <p>🔍 <strong>Research Boom:</strong> 2010-2020 saw most rapid growth (+300%)</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
