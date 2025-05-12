@@ -37,6 +37,16 @@ This repository contains our (Group 5's) work for CIT 5900-002's three-part proj
   - Text processing methods
 - Created this GitHub Pages site to visualize findings and provide an interactive dashboard
 
+## Project structure
+CIT5900-Research-Graph/
+├── docs/ # GitHub Pages dashboard (HTML/JS/CSS)
+│ └── data/ # Processed JSON for visualization
+├── code/ # Python backend
+│ ├── metadata_extraction/ # API scrapers (nih.py, openalex.py)
+│ ├── processing/ # Data cleaning scripts
+│ └── visualization.py # Generates dashboard data
+└── tests/ # Unit tests
+
 ## Technologies Used
 - **Python**: Core programming language
 - **Pandas/NumPy**: Data processing and numerical analysis
@@ -50,7 +60,6 @@ This repository contains our (Group 5's) work for CIT 5900-002's three-part proj
 - `main.py`: Entry point for running analysis code
 - `data/`: Contains processed datasets
 - `code/`: Source code for data processing and analysis
-- `notebooks/`: Exploratory Jupyter notebooks
 - `docs/`: Documentation and GitHub Pages files
 - `tests/`: Unit tests for code validation
 
@@ -63,4 +72,11 @@ This repository contains our (Group 5's) work for CIT 5900-002's three-part proj
 1. Clone this repository
 2. Install requirements: `pip install -r requirements.txt`
 3. Run the main analysis: `python main.py`
-4. View the dashboard at (https://github.com/sethbh30/FSRDC-Publications-Pipeline)
+4. If you want to run individual components:
+`python src/metadata_extraction/nih.py`      
+`python src/processing/deduplication.py`    
+`python src/visualization.py`
+5. View the dashboard at (https://github.com/sethbh30/FSRDC-Publications-Pipeline)
+
+## Contributing
+Pull requests welcome! For major changes, open an issue first.
