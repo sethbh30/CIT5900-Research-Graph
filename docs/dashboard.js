@@ -1,23 +1,24 @@
-fetch('data/publications.json')
+// Load visualization data
+fetch('data/visualizations.json')
     .then(response => response.json())
     .then(data => {
-        // Render Plot 1
+        // Render Active Projects Timeline
         Plotly.newPlot(
-            'projects-per-year',
-            JSON.parse(data.plots.plot1).data,
-            JSON.parse(data.plots.plot1).layout
+            'active-projects-container',
+            JSON.parse(data.active).data,
+            JSON.parse(data.active).layout
         );
         
-        // Render Plot 2
+        // Render Publications by Year
         Plotly.newPlot(
-            'active-projects-trend',
-            JSON.parse(data.plots.plot2).data,
-            JSON.parse(data.plots.plot2).layout
+            'publications-container',
+            JSON.parse(data.publications).data,
+            JSON.parse(data.publications).layout
         );
         
-        // Make plots responsive
+        // Make responsive
         window.addEventListener('resize', function() {
-            Plotly.Plots.resize('projects-per-year');
-            Plotly.Plots.resize('active-projects-trend');
+            Plotly.Plots.resize('active-projects-container');
+            Plotly.Plots.resize('publications-container');
         });
     });
