@@ -39,13 +39,29 @@ This repository contains our (Group 5's) work for CIT 5900-002's three-part proj
 
 ## Project structure
 CIT5900-Publications-Pipeline/
-├── docs/ # GitHub Pages dashboard (HTML/JS/CSS)
-│ └── data/ # Processed JSON for visualization
-├── code/ # Python backend
-│ ├── metadata_extraction/ # API scrapers (nih.py, openalex.py)
-│ ├── processing/ # Data cleaning scripts
-│ └── visualization.py # Generates dashboard data
-└── tests/ # Unit tests
+├── code/                      # Python backend
+  ├── analysis/
+    └──data_statistics.py
+    └──graphs_clustering.py
+│ ├── metadata_extraction/     # API scrapers (nih.py, openalex.py)
+   └──extract_metadata_core.py
+   └──extract_metadata_nih.py
+   └──extract_metadata_openalex.py
+   └──extract_metadata_orcid.py
+│ ├── processing/              # Data cleaning scripts
+    └──deduplication_data_enrichment.py            
+  |── visualization/           # Generates dashboard data
+    └──visualization.py             
+  |── tests/                           # Unit tests
+   └──test_extract_metadata.py
+├── docs/                      # GitHub Pages dashboard (HTML/JS/CSS)
+│ └── data/                    # Processed JSON for visualization  
+  └── index.html                 # Final HTML report with plots
+  └──config.yml
+  └──dashboard.js
+├── main.py                    # Master script to run the project
+├── requirements.txt
+└── README.md
 
 ## Technologies Used
 - **Python**: Core programming language
