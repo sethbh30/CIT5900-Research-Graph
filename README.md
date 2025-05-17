@@ -37,28 +37,34 @@ This repository contains our (Group 5's) work for CIT 5900-002's three-part proj
   - Text processing methods
 - Created this GitHub Pages site to visualize findings and provide an interactive dashboard
 
-## Project structure
+## Project Structure
+
+```bash
 CIT5900-Publications-Pipeline/
 ├── code/                      # Python backend
-  ├── analysis/
-    └──data_statistics.py
-    └──graphs_clustering.py
-│ ├── metadata_extraction/     # API scrapers (nih.py, openalex.py)
-   └──extract_metadata_core.py
-   └──extract_metadata_nih.py
-   └──extract_metadata_openalex.py
-   └──extract_metadata_orcid.py
-│ ├── processing/              # Data cleaning scripts
-    └──deduplication_data_enrichment.py            
-  |── visualization/           # Generates dashboard data
-    └──visualization.py             
-  |── tests/                           # Unit tests
-   └──test_extract_metadata.py
+│   ├── analysis/
+│   │   ├── data_statistics.py
+│   │   └── graphs_clustering.py
+│   ├── metadata_extraction/   # API scrapers (nih.py, openalex.py)
+│   │   ├── extract_metadata_core.py
+│   │   ├── extract_metadata_nih.py
+│   │   ├── extract_metadata_openalex.py
+│   │   └── extract_metadata_orcid.py
+│   ├── processing/
+│   │   └── deduplication_data_enrichment.py
+│   ├── visualization/
+│   │   └── visualization.py
+│   └── tests/
+│       └── test_extract_metadata.py
 ├── docs/                      # GitHub Pages dashboard (HTML/JS/CSS)
-│ └── data/                    # Processed JSON for visualization  
-  └── index.html                 # Final HTML report with plots
-  └──config.yml
-  └──dashboard.js
+│   ├── data/
+│   ├── images/
+│   │   ├── plot1.png
+│   │   └── plot2.png
+│   ├── config.yml
+│   ├── index.html
+│   ├── dashboard.js
+│   └── style.css
 ├── main.py                    # Master script to run the project
 ├── requirements.txt
 └── README.md
