@@ -68,6 +68,7 @@ CIT5900-Publications-Pipeline/
 ├── main.py                    # Master script to run the project
 ├── requirements.txt
 └── README.md
+```
 
 ## Technologies Used
 - **Python**: Core programming language
