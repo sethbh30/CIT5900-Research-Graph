@@ -21,7 +21,36 @@
         </section>
 
         <section class="project-journey">
-            <!-- Your existing project journey content -->
+            <div class="phase">
+                <h3>Project 1: Data Modeling and Basic Graph Analysis</h3>
+                <ul>
+                    <li>Developed foundational data structures to represent FSRDC research outputs</li>
+                    <li>Implemented graph data structures where nodes represented research outputs</li>
+                    <li>Created connections between outputs based on shared attributes</li>
+                    <li>Implemented BFS/DFS algorithms for graph traversal</li>
+                </ul>
+            </div>
+            
+            <div class="phase">
+                <h3>Project 2: Web Scraping, API Integration, and Advanced Analysis</h3>
+                <ul>
+                    <li>Expanded dataset through web scraping of public FSRDC projects</li>
+                    <li>Integrated with research APIs (OpenAlex, NIH, BASE, CORE)</li>
+                    <li>Applied entity resolution techniques to remove duplicates</li>
+                    <li>Enhanced graph analysis using NetworkX</li>
+                </ul>
+            </div>
+            
+            <div class="phase">
+                <h3>Project 3: Comprehensive Analysis and Web Dashboard</h3>
+                <ul>
+                    <li>Consolidated and deduplicated data from multiple sources</li>
+                    <li>Performed extensive data enrichment and standardization</li>
+                    <li>Conducted exploratory data analysis on RDC performance</li>
+                    <li>Applied advanced data science techniques (PCA, clustering)</li>
+                    <li>Created this interactive visualization dashboard</li>
+                </ul>
+            </div>
         </section>
 
         <section class="visualizations">
@@ -46,7 +75,7 @@
                 <div id="publicationsPlot" class="plot"></div>
                 <div class="insights">
                     <h4>Key Findings:</h4>
-                    <p>📈 <strong>Exponential Growth:</strong> Annual output increased from 4 projects (2014) to 13 (2018)</p>
+                    <p>📈 <strong>Exponential Growth:</strong> Annual output increased from 5 projects (2014) to 13 (2018)</p>
                     <p>🏆 <strong>Peak Year:</strong> 2024 saw maximum productivity (23 projects)</p>
                     <p>🔄 <strong>Growth Rate:</strong> 150% increase over 5 years</p>
                     <p>📈 <strong>Post-Pandemic:</strong> Strong increase from 8 projects in 2020 to 23 projects in 2024</p>
@@ -64,8 +93,8 @@
 
         // 2. Publications Data
         const publicationsData = {
-            years: [1949,1964,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025],
-            counts: [1,1,1,1,2,1,2,1,1,2,2,1,1,2,2,6,3,6,5,4,7,11,5,16,20,16,13,8,7,6,15,8,16,4]
+            years: [1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025],
+            counts: [1,1,2,1,2,1,1,2,2,1,1,2,2,6,3,6,5,4,7,11,5,16,20,16,13,8,5,10,17,21,23,3]
         };
 
         // Render plots when page loads
