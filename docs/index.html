@@ -63,7 +63,7 @@
                 <div class="insights">
                     <h4>Key Findings:</h4>
                     <p>🚀 <strong>Steady Expansion:</strong> Active projects grew from 4 (1995) to 60 (2018)</p>
-                    <p>⏱️ <strong>Doubling Period:</strong> Project count doubles every 10 years</p>
+                    <p>⏱️ <strong>Doubling Period:</strong> Project count doubles every 5 years</p>
                     <p>📊 <strong>Current Status:</strong> 35 active projects in 2025</p>
                     <p>🔍 <strong>Research Boom:</strong> 2010-2020 saw most rapid growth (+300%)</p>
                 </div>
@@ -104,15 +104,15 @@
                 x: activeData.years,
                 y: activeData.counts,
                 type: 'line+markers',
-                marker: {color: '#1f77b4', size: 8},
-                line: {width: 3}
+                marker: {color: '#1f77b4', size: 8, symbol:'circle'},
+                line: {width: 3, shape: 'spline'}
             }], {
                 title: 'Active Projects (1990-2025)',
                 xaxis: {title: 'Year', tickvals: [1990,1995,2000,2005,2010,2015,2020,2025]},
                 yaxis: {title: 'Number of Active Projects'},
                 hovermode: 'x unified'
             });
-
+             
             // Publications Plot
             Plotly.newPlot('publicationsPlot', [{
                 x: publicationsData.years,
