@@ -57,7 +57,8 @@ CIT5900-Publications-Pipeline/
 │   └── tests/
 │       └── test_extract_metadata.py
 ├── docs/                      # GitHub Pages dashboard (HTML/JS/CSS)
-│   ├── data/
+│   ├── data/                  # Final Output dataset
+        ├──ResearchOutputs_Group5.csv
 │   ├── images/
 │   │   ├── plot1.png
 │   │   └── plot2.png
