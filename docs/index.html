@@ -104,8 +104,16 @@
                 x: activeData.years,
                 y: activeData.counts,
                 type: 'line+markers',
-                marker: {color: '#1f77b4', size: 8, symbol:'circle'},
-                line: {width: 3, shape: 'spline'}
+                marker: {
+                    color: '#9370db',
+                    size: 8,
+                    line: {
+                       width: 2,
+                       color: '#ffffff'  // White border for markers
+                    },
+                    symbol: 'circle'  // Explicitly set marker shape
+                },
+                line: {width: 3}
             }], {
                 title: 'Active Projects (1990-2025)',
                 xaxis: {title: 'Year', tickvals: [1990,1995,2000,2005,2010,2015,2020,2025]},
